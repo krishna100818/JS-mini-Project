@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Dale School</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav class="navbar container">
+        <a href="/" class="brand-logo">
+          <img
+            src="assets/school-logo.png"
+            alt="Flower Dale Logo"
+            class="logo-img"
+          />
+          <span class="logo-text"> Flower Dale <span> School </span></span>
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#academics" class="nav-link">
+                Academics <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">Academic Year</a></li>
+                <li><a href="#">Results</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#admissions" class="nav-link">
+                Admissions <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Registration Process</a></li>
+                <li><a href="#">Fees Structure</a></li>
+                <li><a href="#">Apply Online</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#admissions" class="btn btn-primary">Admissions Open</a>
+
+          <div class="hamburger" id="hamburger">
+            <i class="ri-menu-4-line"></i>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+
+          <nav class="mobile-nav" id="mobileNav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero" aria-label="Hero - Flower Dale School">
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-gallery" aria-hidden="true">
+          <div class="gallery-track">
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/03/s2.jpg"
+              alt="Students playing"
+            />
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/03/s5.jpg"
+              alt="gymnastics"
+            />
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/05/IMG-20200309-WA0011.jpg"
+              alt="Kids learning"
+            />
+
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/03/s2.jpg"
+              alt="Students playing"
+            />
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/05/IMG-20200502-WA0004.jpg"
+              alt="Classroom activity"
+            />
+            <img
+              src="https://flowerdaleschool.com/wp-content/uploads/2020/04/function2.jpg"
+              alt="Kids playing"
+            />
+          </div>
+        </div>
+
+        <div class="hero-content container">
+          <span class="school-badge fade-in"
+            >Welcome to Flower Dale School</span
+          >
+          <h1 class="fade-in">
+            Where Bright Futures <span class="text-gold">Blossom</span>
+          </h1>
+          <p class="school-para fade-in">
+            Nurturing intellect, character, and creativity in a safe, modern
+            environment. Join a community dedicated to excellence.
+          </p>
+
+          <div
+            class="hero-buttons fade-in"
+            role="group"
+            aria-label="Hero actions"
+          >
+            <a href="#admissions" class="btn btn-primary">Apply Now</a>
+            <button
+              id="watch-video-btn"
+              class="btn btn-outline"
+              aria-haspopup="dialog"
+              aria-controls="video-modal"
+            >
+              <i class="ri-play-circle-line" aria-hidden="true"></i> Watch Video
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="video-modal"
+          class="video-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-hidden="true"
+        >
+          <div class="video-wrapper" role="document">
+            <button class="video-close" aria-label="Close video">
+              &times;
+            </button>
+            <video
+              id="heroVideo"
+              playsinline
+              muted
+              loop
+              preload="auto"
+              controls
+            >
+              <source src="assets/school.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about container section-padding">
+        <div class="about-grid">
+          <div class="about-text scroll-reveal">
+            <h4 class="sub-heading">About Us</h4>
+            <h2>More Than Just A School</h2>
+            <p>
+              At Flower Dale, we believe education is a journey, not a race.
+              Established with a vision to enlighten young minds, our campus
+              blends traditional values with modern pedagogy.
+            </p>
+            <p>
+              We are committed to creating responsible citizens who carry the
+              light of knowledge wherever they go.
+            </p>
+            <a href="#" class="text-link"
+              >Read our full history <i class="ri-arrow-right-line"></i
+            ></a>
+          </div>
+          <div class="about-images scroll-reveal">
+            <div class="img-large"></div>
+            <div class="img-small"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="news section-padding bg-light">
+        <div class="container">
+          <div class="section-header">
+            <h2>Happenings @ Flower Dale</h2>
+            <a href="#" class="view-all">View All News</a>
+          </div>
+          <div class="news-grid">
+            <div class="news-card scroll-reveal">
+              <div class="card-image event-bg">
+                <span class="date-badge">29 NOV</span>
+              </div>
+              <div class="card-content">
+                <span class="category">Event</span>
+                <h3>Annual Sports Day 2024</h3>
+                <p>
+                  Join us for a day of athleticism and team spirit at the main
+                  ground.
+                </p>
+              </div>
+            </div>
+            <div class="news-card scroll-reveal">
+              <div class="card-image news1-bg"></div>
+              <div class="card-content">
+                <span class="category">Achievement</span>
+                <h3>Inter-Basketball District-level Championship</h3>
+                <p>
+                  Our students secured 1st prize in the Inter-School district
+                  level category.
+                </p>
+              </div>
+            </div>
+            <div class="news-card scroll-reveal">
+              <div class="card-image news2-bg"></div>
+              <div class="card-content">
+                <span class="category">Notice</span>
+                <h3>Admissions Open: Phase 1</h3>
+                <p>
+                  Registration forms for the academic year 2025 are now
+                  available.
+                </p>
+              </div>
+            </div>
+
+            <div class="news-card scroll-reveal">
+              <div class="card-image news3-bg"></div>
+              <div class="card-content">
+                <span class="category">Celebration Box</span>
+                <h3>Celebrate with us!</h3>
+                <div class="birthday-card-box">
+                  <div class="birthday-card01">
+                    <img src="assets/shivambrday.jpg" alt="birthday" />
+                    <span
+                      ><i class="ri-cake-2-fill"></i>Shivam's birthday:29
+                      November</span
+                    >
+                  </div>
+
+                  <div class="birthday-card02">
+                    <img src="assets/krishcake.jpg" alt="birthday" />
+                    <span
+                      ><i class="ri-cake-3-fill"></i>Krishna's birthday: 29
+                      November</span
+                    >
+                  </div>
+
+                  <div class="birthday-card02">
+                    <img src="assets/teacher.jpg" alt="birthday" />
+                    <span
+                      ><i class="ri-cake-3-fill"></i>Mr.Nikhil Kamath's
+                      birthday: 29 November</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card scroll-reveal">
+              <div class="card-image news4-bg"></div>
+              <div class="card-content">
+                <span class="category">Our Toppers: our pride</span>
+                <h3>Our Class Toppers- Student 2024-25</h3>
+                <div class="class10-card">
+                  <h2>Class X Toppers</h2>
+                  <div class="topper10-details">
+                    <img src="assets/schoolman.png" alt="topper10" />
+                    <span>Shivam Thapa</span>
+                  </div>
+                </div>
+
+                <div class="class12-card">
+                  <h2>Class XII toppers</h2>
+                  <div class="topper12-details">
+                    <img src="assets/schoolman.png" alt="topper12" />
+                    <span>Krishna Bam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card scroll-reveal">
+              <div class="card-image news5-bg"></div>
+              <div class="card-content">
+                <span class="category">The Poll of the Week</span>
+                <h3 class="poll-card-tittle">
+                  Which club should we start next?
+                </h3>
+
+                <div class="poll-card" data-poll-id="poll1">
+                  <h3 class="poll-title">Which club should we start next?</h3>
+
+                  <div class="poll-options">
+                    <div class="poll-option" data-value="Robotics Club">
+                      <div class="poll-row">
+                        <span class="poll-label">Robotics Club</span>
+                        <span class="poll-percent">60%</span>
+                      </div>
+                      <div class="poll-bar">
+                        <div class="poll-bar-fill" style="width: 60%"></div>
+                      </div>
+                    </div>
+
+                    <div class="poll-option" data-value="Photography">
+                      <div class="poll-row">
+                        <span class="poll-label">Photography</span>
+                        <span class="poll-percent">40%</span>
+                      </div>
+                      <div class="poll-bar">
+                        <div class="poll-bar-fill" style="width: 40%"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="poll-footer">Click an option to cast your vote!</p>
+                </div>
+
+                <div class="poll-card" data-poll-id="poll2">
+                  <h3 class="poll-title">
+                    Which club should we introduce next?
+                  </h3>
+
+                  <div class="poll-options">
+                    <div class="poll-option" data-value="Literature Club">
+                      <div class="poll-row">
+                        <span class="poll-label">Literature Club</span>
+                        <span class="poll-percent">75%</span>
+                      </div>
+                      <div class="poll-bar">
+                        <div class="poll-bar-fill" style="width: 75%"></div>
+                      </div>
+                    </div>
+
+                    <div class="poll-option" data-value="Music Club">
+                      <div class="poll-row">
+                        <span class="poll-label">Dance Club</span>
+                        <span class="poll-percent">25%</span>
+                      </div>
+                      <div class="poll-bar">
+                        <div class="poll-bar-fill" style="width: 25%"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="poll-footer">Click an option to cast your vote!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="facilities-section">
+        <div class="section-header">
+          <h2>World Class Facilities</h2>
+          <p>Providing the best environment for holistic learning</p>
+        </div>
+
+        <div class="facilities-container">
+          <div class="facility-card">
+            <img
+              src="assets/school-lab.jpg"
+              alt="Science Lab"
+              class="card-img"
+            />
+            <div class="card-overlay">
+              <div class="card-content">
+                <h3>Science Labs</h3>
+                <p>
+                  Advanced physics, chemistry, and biology setups for hands-on
+                  learning.
+                </p>
+              </div>
+              <div class="card-icon">
+                <span>&rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <img
+              src="assets/school-library.jpg"
+              alt="Library"
+              class="card-img"
+            />
+            <div class="card-overlay">
+              <div class="card-content">
+                <h3>The Library</h3>
+                <p>
+                  A collection of 10,000+ books fostering a love for reading.
+                </p>
+              </div>
+              <div class="card-icon">
+                <span>&rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <img
+              src="assets/school-smartclass.jpg"
+              alt="Smart Class"
+              class="card-img"
+            />
+            <div class="card-overlay">
+              <div class="card-content">
+                <h3>Smart Classes</h3>
+                <p>
+                  Interactive digital boards and audio-visual learning aids.
+                </p>
+              </div>
+              <div class="card-icon">
+                <span>&rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <img
+              src="assets/school-computerlab.jpg"
+              alt="Computer Lab"
+              class="card-img"
+            />
+            <div class="card-overlay">
+              <div class="card-content">
+                <h3>Computer Lab</h3>
+                <p>
+                  High-end systems teaching coding, AI, and digital literacy.
+                </p>
+              </div>
+              <div class="card-icon">
+                <span>&rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="logo white-logo">
+            <span>Flower Dale School</span>
+          </div>
+          <p>
+            Igniting minds, illuminating futures. The premier institution for
+            holistic education in Dehradun.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Admission Procedure</a></li>
+            <li><a href="#">Fee Structure</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <i class="ri-map-pin-line"></i> 53-A, Tapkeshwar Road, Garhi Cantt,
+            Dehradun
+          </p>
+          <p><i class="ri-phone-line"></i> +91-135-2552639</p>
+          <p><i class="ri-mail-line"></i> info@flowerdale.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Flower Dale School. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div id="admission-modal" class="modal-overlay hidden">
+      <div class="modal-content admission-modal-content">
+        <button class="close-modal" id="close-admission">&times;</button>
+        <div class="modal-header">
+          <h2>Admissions Open 2025-26</h2>
+          <p>Please fill in the details below.</p>
+        </div>
+        <form id="admissionForm">
+          <div class="form-group">
+            <label>Student Name</label
+            ><input type="text" id="studentName" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Father's Name</label
+              ><input type="text" id="fatherName" required />
+            </div>
+            <div class="form-group">
+              <label>Mother's Name</label><input type="text" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Class</label>
+              <select id="classApply" required>
+                <option value="" disabled selected>Select Class</option>
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Contact</label
+              ><input type="tel" pattern="[0-9]{10}" required />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Submit Application
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
